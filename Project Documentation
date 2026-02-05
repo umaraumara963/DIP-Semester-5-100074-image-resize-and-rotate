@@ -1,0 +1,97 @@
+
+## 1. Table of Contents
+
+* **Project Introduction** ........................................................... Page 1
+* **The Science of Resizing** ...................................................... Page 3
+* **The Logic of Rotation** ......................................................... Page 6
+* **Maintaining Aspect Ratio** ................................................... Page 9
+* **Quality Preservation Standards** ........................................... Page 12
+* **User Interface & Experience** ............................................... Page 14
+* **Error Handling & Troubleshooting** ...................................... Page 16
+* **Glossary of Terms** ............................................................... Page 18
+* **Project Conclusion** .............................................................. Page 20
+
+---
+
+## 2. Project Introduction
+
+### **Purpose**
+
+The **main point** of this project is to provide a **reliable environment** where digital images can be altered in size and orientation without losing their **original essence**. In a world of different screen sizes, **precise resizing and accurate rotation** are no longer optional—they are **essential**.
+
+### **Design Philosophy**
+
+We believe in **Non-Destructive Editing**. This means the software always **works on a virtual layer**, protecting the **original file from accidental damage**.
+
+---
+
+## 3. The Science of Resizing
+
+### **What is Resizing?**
+
+Resizing is more than just changing numbers. It is about **re-sampling the pixel grid**.
+
+* **Downscaling (Making Smaller):**
+* **Main Point:** When shrinking an image, the tool must decide which pixels to keep. Our system uses a **Smoothing Filter** to ensure that **fine details (like hair or text)** don't disappear into a **"shimmering" mess**.
+
+
+* **Upscaling (Making Larger):**
+* **Main Point:** When enlarging, the tool fills in the **gaps between pixels**. We focus on **Edge Detection** to ensure that lines stay **crisp** rather than becoming **"fuzzy" or "blocky"**.
+
+
+
+---
+
+## 4. The Logic of Rotation
+
+### **Fixed Rotation**
+
+For standard fixes, we provide instant **90-degree and 180-degree turns**.
+
+* **Main Point:** These rotations are **Lossless**, meaning the image quality stays **100% identical to the original** because the pixels are simply moved to **new slots in the grid**.
+
+### **Free Rotation (Tilting)**
+
+When an image is tilted (e.g., by 15 degrees), the square corners of the image rotate into new space.
+
+* **Main Point:** Our project features **Auto-Canvas Expansion**. We calculate the **new height and width** needed to fit the **diagonal version** of your photo, ensuring **no corners are cut off**.
+
+---
+
+## 5. Maintaining Aspect Ratio
+
+### **The Importance of Symmetry**
+
+The **main point** of aspect ratio is maintaining the **relationship between width and height**.
+
+* **Standard Mode:** The tool **locks the proportions**. If you double the width, the **height doubles automatically**.
+* **Stretch Mode:** This allows for custom **"squashing" or "stretching"**, though it is usually avoided to keep photos looking **realistic**.
+
+---
+
+## 6. Quality Preservation Standards
+
+### **Pixel Integrity**
+
+Every time you resize an image, you risk **"compression artifacts"** (ugly colored blocks).
+
+* **Main Point:** Our tool applies **Anti-Aliasing**. This is a technique that **smooths the edges of slanted lines** after a rotation or resize, making the result look **high-end and professional**.
+
+---
+
+## 7. User Interface & Experience
+
+### **Workflow Consistency**
+
+To make the tool effective, we follow a simple **3-step workflow**:
+
+1. **Input:** Drag and drop the **original file**.
+2. **Transform:** Set your desired **Size or Angle**.
+3. **Finalize:** **Preview the result** and save the new version
+
+## 8. Glossary of Terms
+
+* **Pixel:** The **smallest unit of color** on a screen.
+* **Resolution:** The **total number of pixels** in an image (Width x Height).
+* **Interpolation:** The process the computer uses to **"guess" new pixels** during a resize.
+* **Orientation:** The **direction of the image** (Landscape or Portrait).
